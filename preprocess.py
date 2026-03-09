@@ -94,4 +94,16 @@ def preprocess_adj(adj):
     # 添加自环
     adj_normalized = adj.toarray() + np.eye(adj.shape[0])
     return adj_normalized
-    
+
+def fix_seed(seed):
+    os.environ['PYTHONHASHSEED'] = str(seed)
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    cudnn.deterministic = True
+    cudnn.benchmark = False
+
+    os.environ['PYTHONHASHSEED'] = str(seed)
+
