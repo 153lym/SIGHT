@@ -49,7 +49,7 @@ class SIGHT():
         self.features = torch.FloatTensor(self.adata.obsm['feat'].copy()).to(self.device)
         self.features_a = torch.FloatTensor(self.adata.obsm['feat_a'].copy()).to(self.device)
         self.label_CSL = torch.FloatTensor(self.adata.obsm['label_CSL']).to(self.device)
-        self.adj = self.adata.obsm['adj'] # (spot, spot) 对称矩阵
+        self.adj = self.adata.obsm['adj']
         self.graph_neigh = torch.FloatTensor(self.adata.obsm['graph_neigh'].copy() + np.eye(self.adj.shape[0])).to(self.device)
         self.dim_input = self.features.shape[1]
         self.dim_output = dim_output
