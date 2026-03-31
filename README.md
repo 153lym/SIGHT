@@ -1,11 +1,10 @@
 # SIGHT
 
-SIGHT: Synergizing Implicit Neural Representations and Graph Convolution to Decouple Gene-Spatial Heterogeneity for Spatially Resolved Transcriptomics
-
+SIGHT: Synergizing continuous physical geometry and transcriptomic semantic to decode tissue architecture
 
 ## Overview:
 
-We introduce SIGHT, a computational framework that synergizes the topological strengths of Graph Convolutional Networks (GCNs) with the continuous signal modeling capabilities of Implicit Neural Representations (INRs). Instead of restricting information flow to fixed adjacency graphs, SIGHT leverages Sinusoidal Representation Networks (SIRENs) to model spatial coordinates as continuous functions, allowing for the precise capture of complex, high-frequency spatial details that are often lost in discrete grid representations. By explicitly decoupling gene-driven identity from spatially-driven geometric constraints and recombining them via a dual-path reconstruction mechanism, SIGHT effectively resolves the fundamental trade-off between domain smoothness and boundary sharpness.
+Here, we present SIGHT, a dual-stream deep learning framework designed to synergistically integrate microenviron-mental topology-based semantics with physically continuous spatial geometry. SIGHT utilizes graph convolutional networks to encode microenvironmental topology-based semantics, while employing sinusoidal representation net-works to directly model spatial coordinates as continuous fields. Fortified by a multi-scale contrastive learning strategy, SIGHT successfully resolves the trade-off between semantic and spatial. We demonstrate SIGHT’s robustness and su-perior performance across diverse platforms, effectively identifying fine-grained spatial domains, denoising data, and inferring cellular trajectories to reveal deeper biological insights into tumor heterogeneity and tissue architecture.
 
 
 
