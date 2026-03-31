@@ -35,4 +35,4 @@ The clustering results for all data are saved in `results/`, for reference.
 ## Citation:
 **This repository contains the source code for the paper:**
 
-xxxxxx
+SIGHT: Synergizing continuous physical geometry and transcriptomic semantic to decode tissue architecture
