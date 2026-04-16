@@ -77,21 +77,16 @@ def add_contrastive_label(adata):
     adata.obsm['label_CSL'] = label_CSL
 
 def preprocess_adj(adj):
-    # 将输入的邻接矩阵 adj 转换为 COO 格式的稀疏矩阵
     adj = sp.coo_matrix(adj)
 
-    # 计算每行的度数（rowsum）
     rowsum = np.array(adj.sum(1))
 
-    # 构造度数矩阵的平方根倒数对角矩阵
     d_inv_sqrt = np.power(rowsum, -0.5).flatten()
     d_inv_sqrt[np.isinf(d_inv_sqrt)] = 0.
     d_mat_inv_sqrt = sp.diags(d_inv_sqrt)
 
-    # 执行对称归一化操作
     adj = adj.dot(d_mat_inv_sqrt).transpose().dot(d_mat_inv_sqrt)
 
-    # 添加自环
     adj_normalized = adj.toarray() + np.eye(adj.shape[0])
     return adj_normalized
 
