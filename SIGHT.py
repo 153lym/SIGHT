@@ -59,9 +59,7 @@ class SIGHT():
         self.adj = torch.FloatTensor(self.adj).to(self.device)
 
     def train(self):
-        self.model = Encoder(self.dim_input, self.dim_output, self.graph_neigh).to(self.device)
-        self.loss_CSL = nn.BCEWithLogitsLoss()
-    
+        self.model = Encoder(self.dim_input, self.dim_output, self.graph_neigh).to(self.device)    
         self.optimizer = torch.optim.Adam(self.model.parameters(), self.learning_rate, 
                                           weight_decay=self.weight_decay)
         
