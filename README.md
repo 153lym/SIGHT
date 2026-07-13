@@ -28,9 +28,6 @@ We provide the example code in [main.py](main.py).
 For different SRT data, it is necessary to set the range of alpha and gamma parameters to find the optimal set of parameter values. 
 During the experiment, we use grid search to search for the best parameters. The optimal parameters for each data can be found in file `best_param.txt`.
 
-### Results
-The clustering results for all data are saved in `results/`, for reference.
-
 ## Citation:
 **This repository contains the source code for the paper:**
 
