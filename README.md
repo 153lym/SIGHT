@@ -4,7 +4,7 @@ SIGHT: Synergizing continuous physical geometry and transcriptomic semantic to d
 
 ## Overview:
 
-Here, we present SIGHT, a dual-stream deep learning framework designed to synergistically integrate microenviron-mental topology-based semantics with physically continuous spatial geometry. SIGHT utilizes graph convolutional networks to encode microenvironmental topology-based semantics, while employing sinusoidal representation net-works to directly model spatial coordinates as continuous fields. Fortified by a multi-scale contrastive learning strategy, SIGHT successfully resolves the trade-off between semantic and spatial. We demonstrate SIGHT’s robustness and su-perior performance across diverse platforms, effectively identifying fine-grained spatial domains, denoising data, and inferring cellular trajectories to reveal deeper biological insights into tumor heterogeneity and tissue architecture.
+Here, we present SIGHT, 
 
 
 
